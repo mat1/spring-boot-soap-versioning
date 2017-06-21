@@ -22,9 +22,7 @@ public class AngebotEndpointV2
     @WebMethod
     public Angebot getAngebot(@WebParam(name = "angebotAnfrage") AngebotAnfrage angebotAnfrage)
     {
-        com.example.demo.v1.Angebot angebot = new AngebotService().getAngebote(angebotAnfrage);
-        // Map V1 to V2
-        return new Angebot(angebot.getName());
+        return new AngebotService().getAngebote(angebotAnfrage);
     }
 
     @WebMethod

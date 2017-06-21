@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 import com.example.demo.Abo;
 import com.example.demo.AngebotAnfrage;
-import com.example.demo.v1.Angebot;
+import com.example.demo.v2.Angebot;
 
 public class AngebotService {
 
@@ -16,7 +16,7 @@ public class AngebotService {
         // Do some business logic call other services
         System.out.println("Business Logic: " + angebotAnfrage);
 
-        return new Angebot(1, "Tageskarte");
+        return new Angebot("Tageskarte");
     }
 
     public Abo getAbo(AngebotAnfrage angebotAnfrage) {
